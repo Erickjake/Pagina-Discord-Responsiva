@@ -1,0 +1,364 @@
+*{
+    font-family: "Open Sans", sans-serif;;
+}
+body{
+ /* Removendo a margem padrão do corpo */
+ margin: 0;
+ /* Para garantir que o conteúdo não ultrapasse a largura da tela */
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/Header_Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+.Titulo{
+    word-break: break-word;
+    letter-spacing: 3px;
+    height: auto;
+    font-family: "Luckiest Guy", cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: calc(2rem + 25px);
+    height: auto;
+    font-weight: 900;
+}
+span{
+    font-family: "Luckiest Guy", cursive;
+    display: block;
+}
+.conteudo1{
+    margin: auto;
+    color: rgba(255, 255, 255, 1);
+    font-size: calc(1rem + 3px);
+    gap: 1px;
+    width: calc(50rem + 25px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-around;
+    justify-items: center;
+}
+.butao{
+    width: calc(40rem + 20px);
+    height: calc(2rem + 10px);
+    gap: 1rem;
+    margin: auto;
+    padding-bottom: 20%;
+}
+#butao1{
+    padding: 2px;
+    color: rgba(35, 39, 42, 1);
+    border: none;
+    border-radius: 2rem;
+    width: calc(13rem + 20px);
+    height: calc(2rem + 20px);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 21.79px;
+    text-align: center;
+}
+#butao2{
+    padding: 2px;
+    border: none;
+    border-radius: 2rem;
+    width: calc(17rem + 40px);
+    height: calc(2rem + 20px);
+    background: rgba(35, 39, 42, 1);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 21.79px;
+    text-align: center;
+}
+.butao a{
+    text-decoration: none;
+    color: rgba(35, 39, 42, 1);
+}
+#bu{
+    color: rgba(255, 255, 255, 1);  
+}
+
+
+/* Conteudo Principal */
+
+.conteudo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    gap: 1PX;
+}
+
+.image1{
+    width: calc(41rem + 20px);
+}
+.imagem-conteudo {
+    max-width: 100%; /* ocupará toda a largura do contêiner */
+    height: auto; /* mantém a proporção da imagem */
+    display: block; /* remove espaços extras ao redor da imagem */
+    margin: 0 auto; /* centraliza a imagem */
+}
+.texto1{
+    word-break: break-word;
+    width: calc(21rem + 20px);
+}
+
+.texto1 h1{
+    font-size: calc(2rem + 10px);
+    font-weight: 900;
+    height: 55%;
+}
+/* conteudo principal 2 */
+.conteudo3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 3PX;
+    background: rgba(246, 246, 246, 1);
+}
+
+.image2{
+    width: calc(41rem + 10px);
+}
+.texto2{
+    word-break: break-word;
+    width: calc(24rem + 15px);
+}
+.texto2 h1{
+    font-size: calc(2rem + 15px);
+    font-weight: 900;
+    height: 25%;
+}
+
+/* Conteudo Principal 3 */
+.conteudo4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 3PX;
+}
+
+.image3{
+    width: calc(41rem + 10px);
+}
+
+.texto3{
+    word-break: break-word;
+    width: calc(24rem + 15px);
+}
+
+.texto3 h1{
+    font-size: calc(2rem + 15px);
+    font-weight: 900;
+    height: 25%;
+}
+
+/* Conteudo Principal 4 */
+
+.conteudo5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3PX;
+    background: rgba(246, 246, 246, 1);
+}
+
+.image4{
+    padding-right: 5%;
+    width: calc(41rem + 10px);
+}
+
+.texto4{
+    word-break: break-word;
+    padding-left: 2%;
+    text-align: center;
+    width: calc(57rem + 55px);
+    height: calc(15rem + 60px);
+    font-size: 120%;
+}
+
+.texto4 h1{
+    padding-left: 20%;
+    font-family: "Luckiest Guy", cursive;
+    width: calc(40rem + 10px);
+    text-align: center;
+    font-size: calc(2rem + 15px);
+    font-weight: 400;
+    height: calc(6rem + 10px);
+}
+
+/* Rodapé */
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rodape img{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and ( max-width: 600px ){
+
+    header{display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: calc(30rem + 15px);
+    width: 100%;}
+
+    .conteudo1{
+        width: 100%;
+        height: calc(10rem + 5px);
+        display: flex;
+        font-size: calc(1rem + 1px);
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .butao{
+        width: calc(20rem + 20px);
+        height: calc(5rem + 10px);
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Titulo{
+        word-break: break-word;
+        letter-spacing: 2px;
+        height: auto;
+        text-align: center;
+        font-size: calc(1rem + 25px);
+        height: auto;
+        font-weight: 500;}
+    
+    /* Mediaquery do conteudo 2 */
+    .conteudo2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(37rem + 20px)
+    }
+    .imagem-conteudo {
+        width: 100%; /* ocupará toda a largura do contêiner */
+        height: calc(14rem + 5px); /* mantém a proporção da imagem */
+        display: block; /* remove espaços extras ao redor da imagem */
+        margin: 0 auto; /* centraliza a imagem */
+}
+    .imagem-conteudo img{
+        padding: 5px;
+    }
+    .texto1{
+        word-break: break-word;
+        width: 100%;
+    }
+    .texto1 h1{
+        font-size: calc(1rem + 15px);
+        font-weight: 900;
+        height: 55%;
+    }
+    /* conteudo3 */
+    .conteudo3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .texto2{
+        word-break: break-word;
+        width: 100%;
+    }
+    .texto2 h1{
+        font-size: calc(1rem + 15px);
+        font-weight: 900;
+        height: 55%;
+    }
+    .imagem-conteudo {
+       max-width:100%; /* ocupará toda a largura do contêiner */
+        height: auto; /* mantém a proporção da imagem */
+        display: block; /* remove espaços extras ao redor da imagem */
+        margin: 0 auto; /* centraliza a imagem */
+    }
+    /* conteudo 4 */
+    .conteudo4{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    .texto3{
+        word-break: break-word;
+        width: 100%;
+    }
+    .texto3 h1{
+        font-size: calc(1rem + 15px);
+        font-weight: 900;
+        height: 55%;
+    }
+    .imagem-conteudo {
+       max-width:100%; /* ocupará toda a largura do contêiner */
+        height: auto; /* mantém a proporção da imagem */
+        display: block; /* remove espaços extras ao redor da imagem */
+        margin: 0 auto; /* centraliza a imagem */
+    }
+    /* cpnteudo 5 */
+    .conteudo5{
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        width: 100%;
+        height: auto;
+    }
+    .texto4{
+        word-break: break-word;
+        gap: 5%;
+        width: 100%;
+    }
+    .texto4 h1{
+        padding: 0px;
+        margin: 0px;
+        text-align: start;
+        font-family: "Luckiest Guy", cursive;
+        width: calc(20rem + 10px);
+        font-size: calc(1rem + 15px);
+        font-weight: 400;
+        height: auto;
+    }
+    .imagem-conteudo {
+        padding-bottom: 10%;
+        width: 100%;
+        max-width:100%; /* ocupará toda a largura do contêiner */
+        height: calc(14rem + 5px); /* mantém a proporção da imagem */
+        display: block; /* remove espaços extras ao redor da imagem */
+        margin: 0 auto; /* centraliza a imagem */
+    }
+    }
+    
